@@ -7,13 +7,13 @@ function palindrome(str){
 	let i=0;
 	let j=n-1;
 	while(i<=j){
-		if(str.charAt(i)!=str.charAt(j))
+		if(str.charAt(i)===str.charAt(j))
 		{
-			return false
-		}
-		else{
 			i++;
 			j--
+		}
+		else{
+			return false
 		}
 	}
 	return true;
