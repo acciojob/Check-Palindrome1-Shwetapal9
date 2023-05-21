@@ -1,21 +1,21 @@
 // complete the given function
 
 function palindrome(str){
-	var s =	str.toLowerCase()
-var i = 0
-	var j = s.length - 1;
-	while (i<j) {
-		if(s.charAt(i)===s.charAt(j)) {
+
+	var s = str.toLowerCase();
+	var n= str.length;
+	var i=0;
+	var j=n-1;
+	while(i<j){
+		if(s.charAt(i)===s.charAt(j))
+		{
 			i++;
 			j--;
-			
 		}
-		else {
+		else{
 			return false
 		}
-		
 	}
-	return true
-
+	return true;
 }
 module.exports = palindrome
